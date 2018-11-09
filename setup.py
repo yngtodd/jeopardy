@@ -24,7 +24,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 setup(
     name='jeopardy',
     version='0.0.1',
-    description='It's all fun and games when there's some risk involved!',
+    description='Jeopardy utkML competition.',
     long_description=readme + '\n\n' + doclink + '\n\n' + history,
     author='Todd Young',
     author_email='young.todd.mk@gmail.com',
@@ -35,6 +35,7 @@ setup(
     package_dir={'jeopardy': 'jeopardy'},
     include_package_data=True,
     install_requires=[
+        'tqdm'
     ],
     license='MIT',
     zip_safe=False,
